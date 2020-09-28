@@ -6,6 +6,7 @@ import { HeaderComponent } from './header/header.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { UsComponent } from './us/us.component';
 import { SlideshowComponent } from './slideshow/slideshow.component';
+import { WorksComponent } from './works/works.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { SlideshowComponent } from './slideshow/slideshow.component';
     HeaderComponent,
     NavbarComponent,
     UsComponent,
-    SlideshowComponent
+    SlideshowComponent,
+    WorksComponent
   ],
   imports: [
     BrowserModule

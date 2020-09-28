@@ -1,0 +1,35 @@
+<div id="nosotros" class="block">
+    <h1 class="text-center">Nuestros productos</h1>
+    <br>
+    <div class="container text-center">
+        <p class="text-center">A continuación se presenta una galería fotográfica de los productos que trabajamos; haga
+            clic en las flechas para avanzar o retroceder entre diapositivas.</p>
+        <p class="text-center">Nuestra calidad de fabricación así como la instalación son de las mejores en el mercado,
+            somos
+            profesionales en lo que hacemos y nos especializamos en Barandales de Acero Inoxidable.</p>
+    </div>
+    <div id="carouselExampleControls" class="carousel slide" data-interval="false">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="../../assets/img/1.jpg" class="d-block img-fluid" alt="...">
+                <div class="carousel-caption">
+                    <h5 class="photo-tag">1</h5>
+                </div>
+            </div>
+            <div class="carousel-item" *ngFor="let photo of photos; index as i">
+                <img [src]="photo" class="d-block img-fluid" alt="...">
+                <div class="carousel-caption">
+                    <h5 class="photo-tag">{{ i + 2 }}</h5>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</div>

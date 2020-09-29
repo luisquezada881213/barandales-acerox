@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit(): void {
+  }
+
+  navigateToElement(elementName){
+    const element = document.querySelector(elementName);
+    element.scrollIntoView({ behavior: 'smooth', block: 'start'});
   }
 
 }
